@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blanco: #fafafb;
+    --morado: #9a67ea;
+    --azul-ligero: #04d4c3;
+    --azul-oscuro: #2a73c2;
+    --verde: #2c7b90;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--morado), var(--azul-ligero));
+    font-family:'Prompt';
+    height: 100vh;
+}
+
+.contenedor{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* perfil */
+#fecha{
+    color:var(--blanco);
+    padding: 50px 0 5px 0;
+}
+
+.perfil h1{
+    color:var(--blanco);
+}
+
+.perfil span{
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+
+
+/* Agregar Tareas */
+
+.add-tareas {
+  background-color: var(--blanco);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 40px 0;
+}
+
+.add-tareas input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--blanco);
+    
+}
+
+.add-tareas i{
+    font-size: 50px;
+    color: var(--morado);
+}
+
+.add-tareas i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.add-tareas input::placeholder{
+    font-size: 1.1rem;
+    color: var(--morado);
+}
+
+/* Seccion Administrar Tareas */
+
+.adm-tareas h3{
+   color: var(--blanco);
+   margin-bottom:20px ;
+}
+.adm-tareas li{
+ display: flex;
+ background: linear-gradient(to bottom, var(--azul-oscuro), var(--verde));
+ border-radius: 15px;
+ padding: 10px;
+ align-items: center;
+ justify-content: space-between;
+ margin: 5px 0 ;
+ color: var(--blanco);
+}
+
+.adm-tareas i{
+  font-size: 25px;
+}
+.adm-tareas i:hover{
+    color: var(--azul-ligero);
+    cursor: pointer;
+  }
+
+.adm-tareas > ul p{
+  font-size: 1.2rem;
+  
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: var(--azul-ligero);
+}
+
